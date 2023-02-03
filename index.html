@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>ENCRIPTADOR</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+             <a href="https://www.aluracursos.com/?gclid=CjwKCAiAleOeBhBdEiwAfgmXf0CP2Yy4AAr7Qw-DbsEKxhdp-LhMD2V8tIcpOllMfBfVPUPxITOO_xoCSkwQAvD_BwE"><img class="logo" src="img/Logo.png" alt="logo alura"></a>
+            <h1 class="titulo">Challenge Encriptador</h1>
+        </div>
+        
+    </header>
+    <main>
+        <form class="formulario" action="">
+            <div class="contenido">
+                <label for="texto"></label>
+                <textarea autofocus required class="cuadro-texto" name="" id="texto" cols="30" rows="10" placeholder="Ingrese Su Texto Aqui"></textarea>
+            </div>
+            <div class="botones">
+                <p id="inf-corri">⚠ Solo letras minusculas y sin acentuacion</p>
+                <input type="button" value="ENCRIPTAR" class="encriptar-boton" onclick="incriptar()">
+                <input type="button" value="DESENTRIPTAR" class="desentriptar-boton" onclick="desencriptar()">
+            </div>
+            
+        </form>
+        <div class="contenedor" >
+            <div class="repuesta">
+                <textarea name=""   id="mostrar" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
+                
+            </div>
+            <div>
+            <div id="visible">
+                <img class="llave" src="img/encriptar-cifrar.png" alt="" width="95%">
+                <p class="tex">  Digite una frace para comenzar a incriptar</p>
+            </div>
+            <div id="oculto">
+               <button onclick="copiar()" class="copiar-boton">COPIAR</button>
+               <img class="imagen-oculta" src="img/0919.png_860-removebg-preview (2).png" alt="">
+                
+            </div>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <a href="https://github.com/Davi080"><img src="img/githut-icono.png" alt="" width="30px" ></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
