@@ -1,6 +1,10 @@
+body{
+    background-color: #CBE9EA;
+}
 .caja{
     width: 100%;
     display: flex;
+    
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #CBE9EA;
@@ -29,7 +33,7 @@ main{
     width: 100%;
     background: linear-gradient(#2CA8AC ,#CBE9EA);
     display: flex;
-    /*justify-content: space-between;*/
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -76,8 +80,9 @@ main{
     background-color: #2CA8AC ;
     color: #CBE9EA;
     border: none;
-    transition: 1s ;
+    transition:  1s ;
     cursor:pointer ;
+    margin-bottom: 20px;
 }
 .encriptar-boton:hover{
     width: 350px;
@@ -94,6 +99,8 @@ main{
     color: #2CA8AC;
     transition: 1s ;
     cursor:pointer ;
+    margin-bottom: 20px;
+
 }
 .desentriptar-boton:hover{
     width: 350px;
@@ -179,10 +186,111 @@ footer{
     
     background-color: #CBE9EA;
     text-align: center;
+    height: 50px;
 }
 
 @media screen and (max-width: 915px ){
     
+   .logo{
+    width: 150px;
+   }
+   .titulo{
+    display: inline;
+    margin: 10px 0 0 15px;
+   }
    
+   .formulario {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+   }
+   .contenido{
+    margin: 20px auto;
+   }
+   .cuadro-texto{
+    margin: 0 auto;
+   }
+   .botones{
+    margin: 0 auto;
     
+   }
+   .encriptar-boton{
+    width: 45%;
+    transition:  1s  ;
+   }
+   .encriptar-boton:hover{
+     width: 300px;
+       position: relative;
+      background: #04C4CB;
+   }
+   .desentriptar-boton{
+    width: 45%;
+    transition:  1s  ;
+    
+   }
+   .desentriptar-boton:hover{
+
+       width: 300px;
+      background: #f2fafa;
+   }
+
+
+   .contenedor{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 77%;
+    height: 400px;
+    
+   }
+   .repuesta textarea {
+    font-size: 20px;
+   }
+   .c-ver{
+    display: flex;
+   }
+   .llave{
+    width: 50%;
+    display: inline-block;
+   }
+   .c-tex{
+    width: 40%;
+    margin: 0 auto;
+    display: inline-block;
+
+   }
+   .imagen-oculta{
+    display: none;
+   }
+  
+}
+
+@media screen and (max-width: 450px ){
+    .logo{
+        width: 100px;
+    }
+    .titulo{
+        font-size: 30px;
+        margin: 10px 0 0 auto;
+    }
+    .encriptar-boton{
+        
+        width: 300px;
+        margin: 10px  auto;
+    }
+    .desentriptar-boton{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .contenedor{
+        margin-top: 70px;
+    }
+    .llave{
+        display: none;
+    }
+    .c-tex{
+        width: 90%;
+    }
+    .copiar-boton{
+        width: 80%;
+    }
 }
